@@ -1,0 +1,180 @@
+{
+  "test_accuracy": 0.6497631652270828,
+  "test_macro_f1": 0.614562419748501,
+  "test_weighted_f1": 0.6408540539170078,
+  "n_test": 7178,
+  "tta": true,
+  "latency_ms": 11.108906000117713,
+  "checkpoint": "/workspace/dl-project/models/emotion_cnn.pt",
+  "best_val_acc": 0.657033426183844,
+  "best_val_macro_f1": 0.622325879133745,
+  "best_epoch": 32,
+  "per_class": {
+    "angry": {
+      "precision": 0.5828877005347594,
+      "recall": 0.5688935281837161,
+      "f1": 0.5758055995773904,
+      "support": 958
+    },
+    "disgust": {
+      "precision": 0.46835443037974683,
+      "recall": 0.6666666666666666,
+      "f1": 0.550185873605948,
+      "support": 111
+    },
+    "fear": {
+      "precision": 0.6022304832713755,
+      "recall": 0.31640625,
+      "f1": 0.4148527528809219,
+      "support": 1024
+    },
+    "happy": {
+      "precision": 0.8515235457063712,
+      "recall": 0.8664036076662909,
+      "f1": 0.8588991338362671,
+      "support": 1774
+    },
+    "sad": {
+      "precision": 0.5588235294117647,
+      "recall": 0.4723336006415397,
+      "f1": 0.5119513255106476,
+      "support": 1247
+    },
+    "surprise": {
+      "precision": 0.7582292849035187,
+      "recall": 0.8038507821901324,
+      "f1": 0.780373831775701,
+      "support": 831
+    },
+    "neutral": {
+      "precision": 0.51300498063088,
+      "recall": 0.7518248175182481,
+      "f1": 0.6098684210526316,
+      "support": 1233
+    }
+  },
+  "confusion_matrix": [
+    [
+      545,
+      40,
+      49,
+      38,
+      98,
+      24,
+      164
+    ],
+    [
+      22,
+      74,
+      2,
+      3,
+      3,
+      3,
+      4
+    ],
+    [
+      130,
+      17,
+      324,
+      45,
+      212,
+      114,
+      182
+    ],
+    [
+      24,
+      6,
+      15,
+      1537,
+      25,
+      41,
+      126
+    ],
+    [
+      119,
+      12,
+      78,
+      64,
+      589,
+      18,
+      367
+    ],
+    [
+      26,
+      2,
+      43,
+      45,
+      10,
+      668,
+      37
+    ],
+    [
+      69,
+      7,
+      27,
+      73,
+      117,
+      13,
+      927
+    ]
+  ],
+  "top_confusions": [
+    {
+      "true": "sad",
+      "predicted": "neutral",
+      "count": 367,
+      "rate_of_true_class": 0.2943063352044908
+    },
+    {
+      "true": "fear",
+      "predicted": "sad",
+      "count": 212,
+      "rate_of_true_class": 0.20703125
+    },
+    {
+      "true": "fear",
+      "predicted": "neutral",
+      "count": 182,
+      "rate_of_true_class": 0.177734375
+    },
+    {
+      "true": "angry",
+      "predicted": "neutral",
+      "count": 164,
+      "rate_of_true_class": 0.17118997912317327
+    },
+    {
+      "true": "fear",
+      "predicted": "angry",
+      "count": 130,
+      "rate_of_true_class": 0.126953125
+    },
+    {
+      "true": "happy",
+      "predicted": "neutral",
+      "count": 126,
+      "rate_of_true_class": 0.07102593010146561
+    },
+    {
+      "true": "sad",
+      "predicted": "angry",
+      "count": 119,
+      "rate_of_true_class": 0.0954290296712109
+    },
+    {
+      "true": "neutral",
+      "predicted": "sad",
+      "count": 117,
+      "rate_of_true_class": 0.0948905109489051
+    }
+  ],
+  "classes": [
+    "angry",
+    "disgust",
+    "fear",
+    "happy",
+    "sad",
+    "surprise",
+    "neutral"
+  ]
+}

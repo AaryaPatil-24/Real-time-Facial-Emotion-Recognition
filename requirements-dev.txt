@@ -1,0 +1,2 @@
+# Development / presentation export only
+playwright>=1.45

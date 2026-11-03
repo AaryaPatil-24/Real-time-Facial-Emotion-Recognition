@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+*.log
+
+# Large / reproducible artefacts
+data/raw/*.pt
+models/*.pt
+!models/emotion_cnn_ferplus.pt
+reports/test_probs.npy
+presentation/slides/
+data/raw/fer2013.csv
+data/raw/fer2013.csv.zip

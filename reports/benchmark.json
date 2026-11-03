@@ -1,0 +1,10 @@
+{
+  "fps": 55.8,
+  "frames": 240,
+  "width": 960,
+  "threads": 4,
+  "tta": true,
+  "smoothing": 7,
+  "source": "demo (held-out FER+ test faces)",
+  "command": "-m src.realtime --source demo --no-display --max-frames 240 --threads 4 --width 960 --checkpoint models/emotion_cnn_ferplus.pt"
+}
